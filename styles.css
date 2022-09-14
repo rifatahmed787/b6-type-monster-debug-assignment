@@ -187,7 +187,18 @@ button {
 }
 
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 900px) {
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   .box-container {
