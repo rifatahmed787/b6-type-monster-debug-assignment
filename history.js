@@ -1,5 +1,15 @@
 const histories = document.getElementById("histories");
 
+
+
+function deleteItems() {
+  // Clear local storage items.
+  localStorage.clear();
+  display.clear(displayHistory());
+}
+
+
+
 function addHistory(questionText, timeTaken, errorCount) {
   const newRow = document.createElement("div");
   newRow.classList.add("card");
